@@ -5,9 +5,10 @@
 	* Date Last Modified: April 11, 2023
 	*/
 
+import java.util.Scanner;
 class Notes {
 	public static void main(String args[]) {
-
+		Scanner s = new Scanner(System.in);
 		//for loop
 
 		// for (int i = 0; i < 5; i++) {
@@ -44,5 +45,26 @@ class Notes {
 		}
 		System.out.println(count); //total number of times inner loop ran
 		
+
+		//Accumulators
+
+		int sum = 0;
+
+		for (int i = 0; i < 10; i++) {
+			sum = sum + i;
+		}
+		System.out.println(sum);
+
+		String accum = "";
+
+		for (int i = 0; i < 10; i++) {
+			System.out.print("Input a word: ");
+			String word = s.nextLine();
+			accum = accum + " " + word;
+			
+		}
+
+		System.out.println(accum);
+
 	}
 }
